@@ -1,6 +1,6 @@
 const GridItem = (Props: { item: string }) => {
   return (
-    <div className="flex h-[14vw] max-h-[18rem] w-[14vw] max-w-[18rem] transform cursor-pointer items-center justify-center bg-gray-600 bg-gray-200 transition duration-300 ease-in-out hover:scale-110 hover:drop-shadow-lg">
+    <div className="flex h-[14vw] max-h-[18rem] w-[14vw] max-w-[18rem] transform cursor-pointer items-center justify-center bg-gray-400 transition duration-300 ease-in-out hover:scale-110 hover:drop-shadow-lg">
       <p>{Props.item}</p>
     </div>
   );
@@ -17,15 +17,15 @@ export const GalleryPreview = () => {
           </p>
         </div>
         <div className=" grid grid-cols-3  gap-2 max-md:pt-4">
-          <GridItem item="string " />
-          <GridItem item="string " />
-          <GridItem item="string " />
-          <GridItem item="string " />
-          <GridItem item="string " />
-          <GridItem item="string " />
-          <GridItem item="string " />
-          <GridItem item="string " />
-          <GridItem item="string " />
+          <GridItem item="image " />
+          <GridItem item="image " />
+          <GridItem item="image " />
+          <GridItem item="image " />
+          <GridItem item="image " />
+          <GridItem item="image " />
+          <GridItem item="image " />
+          <GridItem item="imaeg " />
+          <GridItem item="image " />
         </div>
       </div>
     </section>
