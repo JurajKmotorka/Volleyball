@@ -24,12 +24,12 @@ export const HeroSection = () => {
         <div className="w-full p-2 md:p-8 xl:p-12 ">
           <div className="flex items-center text-base">
             <Image
-              className=" md:w-26 mr-4 w-12 lg:w-20 xl:mr-6 2xl:w-24 "
+              className=" md:w-26 2xl:w-30 mr-4 w-12 lg:w-28 xl:mr-6 "
               priority
               src="/favicon.png"
-              height={96}
-              width={96}
               alt="Logo"
+              height={140}
+              width={140}
             />
             <div className=" text-xl md:text-2xl lg:text-3xl 2xl:text-4xl">
               Volejbalový Klub <br /> Topoľčany
