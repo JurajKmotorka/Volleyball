@@ -8,7 +8,7 @@ const GridItem = (Props: { item: string }) => {
 
 export const GalleryPreview = () => {
   return (
-    <section className=" mt-20 h-[100vh]  p-10 md:px-[15vw]">
+    <section className=" mt-10 h-[100vh] p-10  md:mt-20 md:px-[15vw]">
       <div className=" flex items-center justify-between p-4 max-md:flex-col md:p-8 xl:p-12  ">
         <div className=" md:w-[30%]">
           <h2 className="pb-4 text-3xl font-semibold">Instagram</h2>
