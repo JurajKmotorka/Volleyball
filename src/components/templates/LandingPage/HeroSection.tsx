@@ -21,7 +21,7 @@ export const HeroSection = () => {
   return (
     <section>
       <div className="relative mx-auto flex  h-[65vh] max-h-[80rem]  flex-col items-center   bg-[url('/hero-background.jpg')] md:h-[100vh]   lg:items-start">
-        <div className="w-full p-4 md:p-8 xl:p-12 ">
+        <div className="w-full p-2 md:p-8 xl:p-12 ">
           <div className="flex items-center text-base">
             <Image
               className=" md:w-26 mr-4 w-12 lg:w-20 xl:mr-6 2xl:w-24 "
