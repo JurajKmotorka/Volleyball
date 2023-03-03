@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { CiFacebook, CiInstagram } from "react-icons/ci";
 import { FiMenu } from "react-icons/fi";
+import { ParallaxBanner } from "react-scroll-parallax";
 
 const AnimatedButton = ({ name }: { name: string }) => {
   return (
@@ -20,8 +21,11 @@ const AnimatedButton = ({ name }: { name: string }) => {
 export const HeroSection = () => {
   return (
     <section>
-      <div className="relative mx-auto flex  h-[65vh] max-h-[80rem]  flex-col items-center   bg-[url('/hero-background.jpg')] md:h-[100vh]   lg:items-start">
-        <div className="w-full p-2 md:p-8 xl:p-12 ">
+      <ParallaxBanner
+        layers={[{ image: "/hero-background.jpg", speed: -15 }]}
+        className="relative mx-auto flex aspect-[2/1]  h-[65vh] max-h-[80rem]  flex-col items-center  md:h-[100vh]   lg:items-start"
+      >
+        <div className="z-10 w-full p-2 md:p-8 xl:p-12 ">
           <div className="flex items-center text-base">
             <Image
               className=" md:w-26 2xl:w-30 mr-4 w-12 lg:w-28 xl:mr-6 "
@@ -46,7 +50,7 @@ export const HeroSection = () => {
               <CiFacebook className="transition duration-300 ease-in-out hover:scale-110" />
               <CiInstagram className="transition duration-300 ease-in-out hover:scale-110 " />
             </div>
-            <div className="   my-[15vh] text-[3rem] leading-tight sm:text-[4rem] md:my-[20vh]   md:px-[15vw]  md:text-[6rem] lg:my-[15vh] lg:text-[8rem] xl:text-[9rem]  2xl:text-[10rem]">
+            <div className="  z-10 my-[15vh] text-[3rem] leading-tight sm:text-[4rem] md:my-[20vh]   md:px-[15vw]  md:text-[6rem] lg:my-[15vh] lg:text-[8rem] xl:text-[9rem]  2xl:text-[10rem]">
               <div>Placeholder</div>
               <div>Text</div>
             </div>
@@ -60,7 +64,7 @@ export const HeroSection = () => {
           width={2400}
           alt="Geometric-pattern"
         />
-      </div>
+      </ParallaxBanner>
     </section>
   );
 };
