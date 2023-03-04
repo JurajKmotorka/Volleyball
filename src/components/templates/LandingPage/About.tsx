@@ -9,7 +9,7 @@ export const About = () => {
   });
 
   return (
-    <section className=" mt-10 h-[200vh] overflow-hidden p-10  md:mt-20 md:px-[15vw]">
+    <section className=" mt-10  overflow-hidden p-10  md:mt-20 md:px-[15vw]">
       <div className=" flex items-center justify-between p-2 max-md:flex-col-reverse  md:p-8 xl:p-12  ">
         <div
           ref={parallax.ref}

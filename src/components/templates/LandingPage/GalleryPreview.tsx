@@ -1,19 +1,14 @@
 import { useParallax } from "react-scroll-parallax";
 import { useMediaQuery } from "react-responsive";
-
-const GridItem = (Props: { item: string }) => {
-  return (
-    <div className=" flex h-[25vw] max-h-[16rem] w-[25vw] max-w-[16rem] transform cursor-pointer items-center justify-center bg-gray-400 transition duration-300 ease-in-out hover:scale-110 hover:drop-shadow-lg md:h-[14vw] md:w-[14vw] xl:h-[12vw] xl:w-[12vw]">
-      <p>{Props.item}</p>
-    </div>
-  );
-};
+import Image from "next/image";
 
 export const GalleryPreview = () => {
   const isMdScreen = useMediaQuery({ minWidth: 768 });
   const parallax = useParallax<HTMLDivElement>({
     translateX: isMdScreen ? [40, 0, "easeOutQuint"] : [0, 0, "easeOutQuint"],
   });
+
+  const images = Array.from(Array(9), (_, i) => `img${i + 1}.jpg`);
 
   return (
     <section className=" mt-10  overflow-hidden p-10  md:mt-20 md:px-[15vw]">
@@ -28,15 +23,19 @@ export const GalleryPreview = () => {
           ref={parallax.ref}
           className=" grid grid-cols-3 gap-[0.1rem] max-md:pt-4 md:gap-2"
         >
-          <GridItem item="image " />
-          <GridItem item="image " />
-          <GridItem item="image " />
-          <GridItem item="image " />
-          <GridItem item="image " />
-          <GridItem item="image " />
-          <GridItem item="image " />
-          <GridItem item="imaeg " />
-          <GridItem item="image " />
+          {images.map((image, index) => (
+            <div
+              key={index}
+              className="flex h-[25vw] max-h-[16rem] w-[25vw] max-w-[16rem] transform cursor-pointer items-center justify-center transition duration-300 ease-in-out hover:scale-110 hover:drop-shadow-lg md:h-[14vw] md:w-[14vw] xl:h-[12vw] xl:w-[12vw]"
+            >
+              <Image
+                src={`/${image}`}
+                alt="gallery item"
+                height={500}
+                width={500}
+              />
+            </div>
+          ))}
         </div>
       </div>
     </section>
