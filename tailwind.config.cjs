@@ -6,6 +6,9 @@ const config = {
       colors: {
         base: " #f4f4f5 ",
       },
+      fontFamily: {
+        oswald: ["Oswald", "sans-serif"],
+      },
     },
   },
   plugins: [],

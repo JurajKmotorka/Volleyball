@@ -50,9 +50,9 @@ export const HeroSection = () => {
               <CiFacebook className="transition duration-300 ease-in-out hover:scale-110" />
               <CiInstagram className="transition duration-300 ease-in-out hover:scale-110 " />
             </div>
-            <div className="  z-10 my-[15vh] text-[3rem] leading-tight sm:text-[4rem] md:my-[20vh]   md:px-[15vw]  md:text-[6rem] lg:my-[15vh] lg:text-[8rem] xl:text-[9rem]  2xl:text-[10rem]">
-              <div>Placeholder</div>
-              <div>Text</div>
+            <div className="z-10 my-[15vh] font-oswald text-[3rem] leading-tight sm:text-[4rem] md:my-[20vh]   md:px-[15vw]  md:text-[6rem] lg:my-[15vh] lg:text-[8rem] xl:text-[9rem]  2xl:text-[10rem]">
+              <div className=" text-stroke text-white">ONE TEAM</div>
+              <div>ONE DREAM</div>
             </div>
           </div>
         </div>

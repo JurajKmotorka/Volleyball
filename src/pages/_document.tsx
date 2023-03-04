@@ -7,6 +7,12 @@ export default function Document() {
         <meta name="description" content="Voleyballový klub topoľčany" />
         <link rel="icon" href="/favicon.png" />
         <link rel="apple-touch-icon" href="/favicon.png"></link>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com"></link>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap"
+          rel="stylesheet"
+        ></link>
       </Head>
       <body>
         <Main />
