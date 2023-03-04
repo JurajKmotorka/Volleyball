@@ -4,7 +4,7 @@ import { GalleryPreview } from "./GalleryPreview";
 
 export const LandingPage = () => {
   return (
-    <div className="m-auto max-w-[150rem] ">
+    <div className="m-auto max-w-[150rem] scroll-smooth ">
       <HeroSection />
       <GalleryPreview />
       <About />

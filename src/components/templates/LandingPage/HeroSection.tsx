@@ -22,7 +22,7 @@ export const HeroSection = () => {
   return (
     <section>
       <ParallaxBanner
-        layers={[{ image: "/hero-background.jpg", speed: -15 }]}
+        layers={[{ image: "/hero-background.jpg", speed: -20 }]}
         className="relative mx-auto flex aspect-[2/1]  h-[65vh] max-h-[80rem]  flex-col items-center  md:h-[100vh]   lg:items-start"
       >
         <div className="z-10 w-full p-2 md:p-8 xl:p-12 ">
