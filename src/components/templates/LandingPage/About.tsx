@@ -10,12 +10,12 @@ export const About = () => {
 
   return (
     <section className=" mt-10  overflow-hidden p-10  md:mt-20 md:px-[15vw]">
-      <div className=" flex items-center justify-between p-2 max-md:flex-col-reverse  md:p-8 xl:p-12  ">
+      <div className=" flex items-center justify-between max-md:flex-col-reverse sm:p-2  md:p-8 xl:p-12  ">
         <div
           ref={parallax.ref}
-          className="relative max-w-[52rem] max-md:pb-4 md:w-[40vw] md:gap-2"
+          className="relative max-w-[52rem] max-md:pb-4 max-sm:w-[72vw] md:w-[40vw] md:gap-2"
         >
-          <div className=" h-full w-full">
+          <div className=" h-full w-full max-sm:w-[72vw]">
             <Image
               src="/parallax-background.jpg"
               alt="playing field"
@@ -23,7 +23,7 @@ export const About = () => {
               height={1000}
             />
           </div>
-          <div className="absolute -top-0 left-0 h-full w-full">
+          <div className=" absolute -top-0 left-0 h-full w-full max-sm:w-[72vw]">
             <Parallax speed={6}>
               <Image
                 src="/parallax-middle.png"
