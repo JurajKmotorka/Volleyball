@@ -2,6 +2,7 @@ import Image from "next/image";
 import { CiFacebook, CiInstagram } from "react-icons/ci";
 import { FiMenu } from "react-icons/fi";
 import { ParallaxBanner } from "react-scroll-parallax";
+import Link from "next/link";
 
 const AnimatedButton = ({ name }: { name: string }) => {
   return (
@@ -41,16 +42,18 @@ export const HeroSection = () => {
             <FiMenu className="ml-auto text-3xl md:hidden" />
             <div className="hover:bg ml-auto hidden gap-x-8  md:flex md:text-xl  xl:gap-x-14 ">
               <AnimatedButton name="Galéria" />
-              <AnimatedButton name="O nás" />
+              <Link href="/about">
+                <AnimatedButton name="O nás" />
+              </Link>
               <AnimatedButton name="Kontakt" />
             </div>
           </div>
           <div className="  flex flex-col-reverse items-center  text-base  md:flex-row">
-            <div className=" absolute flex w-[30vw] basis-1 justify-around text-2xl max-md:-translate-y-[2.5rem] md:h-[20vh] md:flex-col   xl:h-[12vh]  2xl:text-3xl">
+            <div className=" absolute z-20 flex w-[30vw] basis-1 justify-around text-2xl max-md:-translate-y-[2.5rem] md:h-[20vh] md:flex-col   xl:h-[12vh]  2xl:text-3xl">
               <CiFacebook className="transition duration-300 ease-in-out hover:scale-110" />
               <CiInstagram className="transition duration-300 ease-in-out hover:scale-110 " />
             </div>
-            <div className="z-10 my-[15vh] font-oswald text-[3rem] leading-tight sm:text-[4rem] md:my-[20vh]   md:px-[15vw]  md:text-[6rem] lg:my-[15vh] lg:text-[8rem] xl:text-[9rem]  2xl:text-[10rem]">
+            <div className="z-10 my-[15vh] font-oswald text-[3rem] leading-tight sm:text-[4rem] md:my-[20vh]   md:px-[15vw]  md:text-[5rem] lg:my-[15vh] lg:text-[6.4rem] xl:text-[8rem]  2xl:text-[10rem]">
               <div className=" text-stroke text-white">ONE TEAM</div>
               <div>ONE DREAM</div>
             </div>
