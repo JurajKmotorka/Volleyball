@@ -3,10 +3,16 @@ import { CiFacebook, CiInstagram } from "react-icons/ci";
 import { FiMenu } from "react-icons/fi";
 import Link from "next/link";
 
-const AnimatedButton = ({ name }: { name: string }) => {
+const AnimatedButton = ({
+  name,
+  buttonRef,
+}: {
+  name: string;
+  buttonRef: string;
+}) => {
   return (
-    <a
-      href="#_"
+    <Link
+      href={buttonRef}
       className="group relative inline-flex min-w-[6rem] items-center justify-start overflow-hidden rounded-lg px-3 py-2 font-semibold leading-none"
     >
       <span className="absolute left-0 top-0 h-32 w-32 translate-x-12 -translate-y-2 rotate-45 bg-white opacity-[3%]"></span>
@@ -15,7 +21,7 @@ const AnimatedButton = ({ name }: { name: string }) => {
         {name}
       </span>
       <span className="absolute inset-0 rounded-lg "></span>
-    </a>
+    </Link>
   );
 };
 
@@ -36,11 +42,11 @@ export const Header = () => {
         </div>
         <FiMenu className="ml-auto text-3xl md:hidden" />
         <div className="hover:bg ml-auto hidden gap-x-8  md:flex md:text-xl  xl:gap-x-14 ">
-          <AnimatedButton name="Galéria" />
-          <Link href="/about">
-            <AnimatedButton name="O nás" />
-          </Link>
-          <AnimatedButton name="Kontakt" />
+          <AnimatedButton name="Rezervácie" buttonRef="/reservation" />
+
+          <AnimatedButton name="O nás" buttonRef="/about" />
+
+          <AnimatedButton name="Kontakt" buttonRef="contact" />
         </div>
       </div>
       <div className="  flex flex-col-reverse items-center  text-base  md:flex-row">
