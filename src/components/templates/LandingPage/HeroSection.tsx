@@ -3,6 +3,7 @@ import { CiFacebook, CiInstagram } from "react-icons/ci";
 import { FiMenu } from "react-icons/fi";
 import { ParallaxBanner } from "react-scroll-parallax";
 import Link from "next/link";
+import { Header } from "../../elements/Header";
 
 const AnimatedButton = ({ name }: { name: string }) => {
   return (
@@ -27,27 +28,7 @@ export const HeroSection = () => {
         className="relative mx-auto flex aspect-[2/1]  h-[65vh] max-h-[80rem]  flex-col items-center  md:h-[100vh]   lg:items-start"
       >
         <div className="z-10 w-full p-2 md:p-8 xl:p-12 ">
-          <div className="flex items-center text-base">
-            <Image
-              className=" md:w-26 2xl:w-30 mr-4 w-12 lg:w-28 xl:mr-6 "
-              priority
-              src="/favicon.png"
-              alt="Logo"
-              height={140}
-              width={140}
-            />
-            <div className=" text-xl md:text-2xl lg:text-3xl 2xl:text-4xl">
-              Volejbalový Klub <br /> Topoľčany
-            </div>
-            <FiMenu className="ml-auto text-3xl md:hidden" />
-            <div className="hover:bg ml-auto hidden gap-x-8  md:flex md:text-xl  xl:gap-x-14 ">
-              <AnimatedButton name="Galéria" />
-              <Link href="/about">
-                <AnimatedButton name="O nás" />
-              </Link>
-              <AnimatedButton name="Kontakt" />
-            </div>
-          </div>
+          <Header />
           <div className="  flex flex-col-reverse items-center  text-base  md:flex-row">
             <div className=" absolute z-20 flex w-[30vw] basis-1 justify-around text-2xl max-md:-translate-y-[2.5rem] md:h-[20vh] md:flex-col   xl:h-[12vh]  2xl:text-3xl">
               <CiFacebook className="transition duration-300 ease-in-out hover:scale-110" />

@@ -30,7 +30,7 @@ export const Header = () => {
     <>
       <div className="flex items-center text-base">
         <Image
-          className=" md:w-26 2xl:w-30 mr-4 w-12 lg:w-28 xl:mr-6 "
+          className=" md:w-26 2xl:w-30 mr-4 w-12 sm:w-16 lg:w-28 xl:mr-6 "
           priority
           src="/favicon.png"
           alt="Logo"
@@ -42,17 +42,13 @@ export const Header = () => {
         </div>
         <FiMenu className="ml-auto text-3xl md:hidden" />
         <div className="hover:bg ml-auto hidden gap-x-8  md:flex md:text-xl  xl:gap-x-14 ">
+          <AnimatedButton name="Domov" buttonRef="/" />
+
           <AnimatedButton name="Rezervácie" buttonRef="/reservation" />
 
           <AnimatedButton name="O nás" buttonRef="/about" />
 
           <AnimatedButton name="Kontakt" buttonRef="contact" />
-        </div>
-      </div>
-      <div className="  flex flex-col-reverse items-center  text-base  md:flex-row">
-        <div className=" absolute z-20 flex w-[30vw] basis-1 justify-around text-2xl max-md:-translate-y-[2.5rem] md:h-[20vh] md:flex-col   xl:h-[12vh]  2xl:text-3xl">
-          <CiFacebook className="transition duration-300 ease-in-out hover:scale-110" />
-          <CiInstagram className="transition duration-300 ease-in-out hover:scale-110 " />
         </div>
       </div>
     </>
