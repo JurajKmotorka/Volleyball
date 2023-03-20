@@ -40,16 +40,16 @@ export const Header = () => {
         <div className=" text-xl md:text-2xl lg:text-3xl 2xl:text-4xl">
           Volejbalový Klub <br /> Topoľčany
         </div>
-        <FiMenu className="ml-auto text-3xl md:hidden" />
+        {/* <FiMenu className="ml-auto text-3xl md:hidden" />
         <div className="hover:bg ml-auto hidden gap-x-8  md:flex md:text-xl  xl:gap-x-14 ">
           <AnimatedButton name="Domov" buttonRef="/" />
 
-          <AnimatedButton name="Rezervácie" buttonRef="/reservation" />
+          <AnimatedButton name="Rezervácie" buttonRef="/reservation" /> 
 
           <AnimatedButton name="O nás" buttonRef="/about" />
 
           <AnimatedButton name="Kontakt" buttonRef="contact" />
-        </div>
+        </div> */}
       </div>
     </>
   );

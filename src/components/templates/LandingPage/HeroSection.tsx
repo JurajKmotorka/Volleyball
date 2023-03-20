@@ -1,25 +1,8 @@
 import Image from "next/image";
 import { CiFacebook, CiInstagram } from "react-icons/ci";
-import { FiMenu } from "react-icons/fi";
 import { ParallaxBanner } from "react-scroll-parallax";
-import Link from "next/link";
 import { Header } from "../../elements/Header";
 
-const AnimatedButton = ({ name }: { name: string }) => {
-  return (
-    <a
-      href="#_"
-      className="group relative inline-flex min-w-[6rem] items-center justify-start overflow-hidden rounded-lg px-3 py-2 font-semibold leading-none"
-    >
-      <span className="absolute left-0 top-0 h-32 w-32 translate-x-12 -translate-y-2 rotate-45 bg-white opacity-[3%]"></span>
-      <span className="absolute top-0 left-0 -mt-1 h-48 w-48 -translate-x-56 -translate-y-24 rotate-45 bg-white opacity-100 transition-all duration-500 ease-in-out group-hover:-translate-x-8"></span>
-      <span className="relative w-full text-center text-base transition-colors duration-500 ease-in-out group-hover:text-[#130922] xl:text-xl">
-        {name}
-      </span>
-      <span className="absolute inset-0 rounded-lg "></span>
-    </a>
-  );
-};
 export const HeroSection = () => {
   return (
     <section>
@@ -32,7 +15,12 @@ export const HeroSection = () => {
           <div className="  flex flex-col-reverse items-center  text-base  md:flex-row">
             <div className=" absolute z-20 flex w-[30vw] basis-1 justify-around text-2xl max-md:-translate-y-[2.5rem] md:h-[20vh] md:flex-col   xl:h-[12vh]  2xl:text-3xl">
               <CiFacebook className="transition duration-300 ease-in-out hover:scale-110" />
-              <CiInstagram className="transition duration-300 ease-in-out hover:scale-110 " />
+              <a
+                href="https://www.instagram.com/vk_topolcany/?igshid=YmMyMTA2M2Y%3D&fbclid=IwAR20BQ6avSlm9xskmw_N1gZYIQx1buWsm50t4_eCpHsma--LbaqnzlIiNUk"
+                target="_blank"
+              >
+                <CiInstagram className="transition duration-300 ease-in-out hover:scale-110 " />
+              </a>
             </div>
             <div className="z-10 my-[15vh] font-oswald text-[3rem] leading-tight sm:text-[4rem] md:my-[20vh]   md:px-[15vw]  md:text-[5rem] lg:my-[15vh] lg:text-[6.4rem] xl:text-[8rem]  2xl:text-[10rem]">
               <div className=" text-stroke text-white">ONE TEAM</div>

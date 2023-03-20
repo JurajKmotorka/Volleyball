@@ -1,8 +1,14 @@
+import { string } from "zod";
 import { Header } from "../../elements/Header";
 
-const HandleAddReservation = () => {
-  console.log("reservation added");
+type DateValue = {
+  time: string;
 };
+
+const HandleAddReservation = () => {
+  const time = "testTime";
+};
+
 export const ReservationPage = () => {
   return (
     <>
