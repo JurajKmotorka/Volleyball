@@ -13,7 +13,10 @@ export const datesRouter = createTRPCRouter({
         },
         body: JSON.stringify({ date: input }),
       });
-      const data: Record<string, unknown> = await response.json();
+      const data: Record<string, unknown> = (await response.json()) as Record<
+        string,
+        unknown
+      >;
       return data;
     }),
 });
