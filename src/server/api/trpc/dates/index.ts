@@ -2,10 +2,17 @@ import { dateSchema } from "./model";
 
 import { createTRPCRouter, publicProcedure } from "(/)/server/api/trpc";
 
+interface ApiResponse {
+  // define the type of the response from the API
+  // you may need to adjust this depending on the actual API response
+  message: string;
+  success: boolean;
+}
+
 export const datesRouter = createTRPCRouter({
   reserveDate: publicProcedure
     .input(dateSchema)
-    .mutation(async (input): Promise<Record<string, unknown>> => {
+    .mutation(async (input): Promise<ApiResponse> => {
       const url = "https://volejbal.c1-europe.altogic.com/api/dates";
       const response = await fetch(url, {
         method: "POST",
@@ -14,7 +21,7 @@ export const datesRouter = createTRPCRouter({
         },
         body: JSON.stringify({ date: input }),
       });
-      const data: Record<string, unknown> = await response.json();
+      const data: ApiResponse = await response.json();
       return data;
     }),
 });
