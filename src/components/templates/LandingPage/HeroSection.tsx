@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { CiFacebook, CiInstagram } from "react-icons/ci";
+import { CiFacebook, CiInstagram, CiMail } from "react-icons/ci";
 import { ParallaxBanner } from "react-scroll-parallax";
 import { Header } from "../../elements/Header";
 
@@ -21,6 +21,7 @@ export const HeroSection = () => {
               >
                 <CiInstagram className="transition duration-300 ease-in-out hover:scale-110 " />
               </a>
+              <CiMail className="transition duration-300 ease-in-out hover:scale-110 " />
             </div>
             <div className="z-10 my-[15vh] font-oswald text-[3rem] leading-tight sm:text-[4rem] md:my-[20vh]   md:px-[15vw]  md:text-[5rem] lg:my-[15vh] lg:text-[6.4rem] xl:text-[8rem]  2xl:text-[10rem]">
               <div className=" text-stroke text-white">ONE TEAM</div>

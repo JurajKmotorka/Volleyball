@@ -12,7 +12,7 @@ export const GalleryPreview = () => {
   const images = Array.from(Array(9), (_, i) => `img${i + 1}.jpg`);
 
   return (
-    <section className=" mt-10  overflow-hidden p-10  md:mt-20 md:px-[15vw]">
+    <section className="  my-10  overflow-hidden p-10  md:my-20 md:px-[15vw]">
       <div className=" flex items-center justify-between max-md:flex-col sm:p-2 md:p-8 xl:p-12  ">
         <div className=" md:w-[30%]">
           <h2 className="pb-4 text-3xl font-semibold lg:text-4xl xl:text-5xl">
@@ -34,7 +34,7 @@ export const GalleryPreview = () => {
               className="flex h-[23.5vw] max-h-[16rem] w-[23.5vw] max-w-[16rem] transform cursor-pointer items-center justify-center bg-[url('/instaBackdrop.jpg')] bg-cover transition duration-300 ease-in-out hover:scale-110 hover:drop-shadow-lg sm:h-[25vw] sm:w-[25vw] md:h-[14vw] md:w-[14vw] xl:h-[12vw] xl:w-[12vw]"
             >
               <Image
-                className="transition duration-1000 ease-in-out hover:opacity-60"
+                className="transition duration-[600ms] ease-in-out hover:opacity-60"
                 src={`/${image}`}
                 alt="gallery item"
                 height={500}

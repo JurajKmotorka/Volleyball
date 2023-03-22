@@ -10,7 +10,7 @@ export const JoinUs = () => {
   });
 
   return (
-    <section className=" mt-10  overflow-hidden p-10  md:mt-20 md:px-[15vw]">
+    <section className=" mt-10  mb-[-2.5rem] overflow-hidden p-10 md:mb-[-5rem] md:mt-20 md:px-[15vw]">
       <div className=" flex items-center justify-between max-md:flex-col-reverse sm:p-2  md:p-8 xl:p-12  ">
         <div
           ref={parallax.ref}
@@ -51,7 +51,8 @@ export const JoinUs = () => {
           </h2>
           <p className="xl:text-xl">
             Ak sa chceš pridať do nášho klubu alebo nás chceš inak podporiť,
-            neváhaj nás kontaktovať cez e-mail alebo naše sociálne siete.
+            neváhaj nás kontaktovať cez e-mail alebo naše sociálne siete. My ti
+            už všetko vysvetlíme :).
           </p>
         </div>
       </div>
