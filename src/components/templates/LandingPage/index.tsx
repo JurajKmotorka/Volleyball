@@ -33,8 +33,8 @@ export const LandingPage = () => {
           vznikla už v roku 2018, kedy sme chceli nadviazať na bohatú históriu
           turnajov v plážovom volejbale v našom okrese. Cieľom nášho klubu je
           <b> podporovať hru volejbalu</b>, poskytnúť hráčom možnosť rozvíjať
-          volejbalové schopnosti no predovšetkým vytvárať
-          <b> priateľské prostredie </b> v jedinečnom{" "}
+          volejbalové schopnosti a predovšetkým vytvárať
+          <b> priateľské prostredie </b> v jedinečnom
           <b> športovom kolektíve</b>.
         </p>
       </div>
