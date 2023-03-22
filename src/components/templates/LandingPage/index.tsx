@@ -29,9 +29,9 @@ export const LandingPage = () => {
       <div className="   flex h-[30vh] items-center bg-gradient-to-r from-[#110d26] to-[#2c0a64] p-[5%] text-zinc-100 md:px-[15vw] lg:text-xl 2xl:text-2xl">
         <p className="leading-[25px] lg:leading-relaxed 2xl:leading-loose">
           Sme <b>partia ľudí</b>, ktorí milujú volejbal, jeho dynamiku a
-          nezameniteľnú atmosféru. Idea založiť náš klub vznikla už v roku 2018,
-          kedy sme chceli nadviazať na bohatú históriu turnajov v plážovom
-          volejbale v našom okrese. Cieľom nášho klubu je
+          nezameniteľnú atmosféru. Idea založiť <b> volejbalový klub </b>{" "}
+          vznikla už v roku 2018, kedy sme chceli nadviazať na bohatú históriu
+          turnajov v plážovom volejbale v našom okrese. Cieľom nášho klubu je
           <b> podporovať hru volejbalu</b>, poskytnúť hráčom možnosť rozvíjať
           volejbalové schopnosti no predovšetkým vytvárať
           <b> priateľské prostredie </b> v jedinečnom{" "}
