@@ -17,7 +17,10 @@ export const LandingPage = () => {
           </span>
           <span className="absolute bottom-0 left-0 h-1 w-full bg-gradient-to-r from-[#2c0a64] to-[#110d26]"></span>
         </h1>
-        <p className="mb-8 text-lg  text-gray-800 lg:text-xl xl:text-2xl">
+        <p
+          id="about"
+          className="mb-8 text-lg  text-gray-800 lg:text-xl xl:text-2xl"
+        >
           Nájdete tu všetky potrebné informácie o nás a o našej činnosti.
           <br />
           Objavte svet volejbalu v Topoľčanoch!

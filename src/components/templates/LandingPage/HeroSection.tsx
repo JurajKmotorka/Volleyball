@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { CiFacebook, CiInstagram, CiMail } from "react-icons/ci";
+import { CiFacebook, CiInstagram, CiMail, CiPhone } from "react-icons/ci";
 import { ParallaxBanner } from "react-scroll-parallax";
 import { Header } from "../../elements/Header";
 
@@ -13,7 +13,7 @@ export const HeroSection = () => {
         <div className="z-10 w-full p-2 md:p-8 xl:p-12 ">
           <Header />
           <div className="  flex flex-col-reverse items-center  text-base  md:flex-row">
-            <div className=" absolute z-20 flex w-[30vw] basis-1 justify-around text-2xl max-md:-translate-y-[2.5rem] md:h-[20vh] md:flex-col   xl:h-[12vh]  2xl:text-3xl">
+            <div className=" absolute z-20 flex w-[30vw] basis-1 justify-around text-2xl max-md:-translate-y-[2.5rem] md:h-[22vh] md:flex-col   xl:h-[20vh]  2xl:text-3xl">
               <CiFacebook className="transition duration-300 ease-in-out hover:scale-110" />
               <a
                 href="https://www.instagram.com/vk_topolcany/?igshid=YmMyMTA2M2Y%3D&fbclid=IwAR20BQ6avSlm9xskmw_N1gZYIQx1buWsm50t4_eCpHsma--LbaqnzlIiNUk"
@@ -21,7 +21,12 @@ export const HeroSection = () => {
               >
                 <CiInstagram className="transition duration-300 ease-in-out hover:scale-110 " />
               </a>
-              <CiMail className="transition duration-300 ease-in-out hover:scale-110 " />
+              <a href="mailto:volejbaltopolcany@gmail.com" target="_blank">
+                <CiMail className="transition duration-300 ease-in-out hover:scale-110 " />
+              </a>
+              <a href="tel:+421915548823" target="_blank">
+                <CiPhone className="transition duration-300 ease-in-out hover:scale-110 " />
+              </a>
             </div>
             <div className="z-10 my-[15vh] font-oswald text-[3rem] leading-tight sm:text-[4rem] md:my-[20vh]   md:px-[15vw]  md:text-[5rem] lg:my-[15vh] lg:text-[6.4rem] xl:text-[8rem]  2xl:text-[10rem]">
               <div className=" text-stroke text-white">ONE TEAM</div>

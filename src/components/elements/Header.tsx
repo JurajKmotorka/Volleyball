@@ -11,7 +11,7 @@ const AnimatedButton = ({
   buttonRef: string;
 }) => {
   return (
-    <Link
+    <a
       href={buttonRef}
       className="group relative inline-flex min-w-[6rem] items-center justify-start overflow-hidden rounded-lg px-3 py-2 font-semibold leading-none"
     >
@@ -21,7 +21,7 @@ const AnimatedButton = ({
         {name}
       </span>
       <span className="absolute inset-0 rounded-lg "></span>
-    </Link>
+    </a>
   );
 };
 
@@ -40,16 +40,14 @@ export const Header = () => {
         <div className=" text-xl md:text-2xl lg:text-3xl 2xl:text-4xl">
           Volejbalový Klub <br /> Topoľčany
         </div>
-        {/* <FiMenu className="ml-auto text-3xl md:hidden" />
         <div className="hover:bg ml-auto hidden gap-x-8  md:flex md:text-xl  xl:gap-x-14 ">
-          <AnimatedButton name="Domov" buttonRef="/" />
-
-          <AnimatedButton name="Rezervácie" buttonRef="/reservation" /> 
-
-          <AnimatedButton name="O nás" buttonRef="/about" />
-
-          <AnimatedButton name="Kontakt" buttonRef="contact" />
-        </div> */}
+          <AnimatedButton name="O nás" buttonRef="/#about" />
+          <AnimatedButton name="Sponzory" buttonRef="/#footer" />
+          {/* <AnimatedButton
+            name="Kontakt"
+            buttonRef="/"
+          /> */}
+        </div>
       </div>
     </>
   );
