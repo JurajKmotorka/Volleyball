@@ -42,7 +42,7 @@ export const Header = () => {
         </div>
         <div className="hover:bg ml-auto hidden gap-x-8  md:flex md:text-xl  xl:gap-x-14 ">
           <AnimatedButton name="O nás" buttonRef="/#about" />
-          <AnimatedButton name="Sponzory" buttonRef="/#footer" />
+          <AnimatedButton name="Sponzori" buttonRef="/#footer" />
           {/* <AnimatedButton
             name="Kontakt"
             buttonRef="/"
