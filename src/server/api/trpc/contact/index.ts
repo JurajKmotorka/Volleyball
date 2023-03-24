@@ -12,7 +12,7 @@ export const contactRouter = createTRPCRouter({
         const [res] = await sendgridClient.send({
           from: CONTACT_MAIL,
           to: CONTACT_MAIL,
-          templateId: "d-40e93b6b16e6453f85c6fd5b28938a10",
+          templateId: "d-adcbfb1c6ab24f7ab6fda0dc5f32bac8",
           dynamicTemplateData: {
             buyer: input.buyer,
           },
