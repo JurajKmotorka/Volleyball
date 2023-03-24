@@ -2,8 +2,7 @@ import { HeroSection } from "./HeroSection";
 import { JoinUs } from "./JoinUs";
 import { GalleryPreview } from "./GalleryPreview";
 import { Footer } from "./Footer";
-import { About } from "./About";
-import Image from "next/image";
+import { ContactForm } from "./ContactForm";
 
 export const LandingPage = () => {
   return (
@@ -12,10 +11,10 @@ export const LandingPage = () => {
 
       <div className="mx-auto my-[15vh] max-w-7xl p-[5%] text-center">
         <h1 className="relative mb-2 pb-4  font-bold leading-tight text-gray-900">
-          <span className="bg-gradient-to-r from-[#110d26] to-[#2c0a64] bg-clip-text text-2xl text-transparent md:text-3xl  lg:text-5xl xl:text-6xl">
+          <span className="bg-maingrad bg-clip-text text-2xl text-transparent md:text-3xl  lg:text-5xl xl:text-6xl">
             Vitajte na oficiálnej stránke Volejbalového klubu Topoľčany.
           </span>
-          <span className="absolute bottom-0 left-0 h-1 w-full bg-gradient-to-r from-[#2c0a64] to-[#110d26]"></span>
+          <span className="absolute bottom-0 left-0 h-1 w-full bg-maingrad"></span>
         </h1>
         <p
           id="about"
@@ -26,7 +25,7 @@ export const LandingPage = () => {
           Objavte svet volejbalu v Topoľčanoch!
         </p>
       </div>
-      <div className="   flex h-[30vh] items-center bg-gradient-to-r from-[#110d26] to-[#2c0a64] p-[5%] text-zinc-100 md:px-[15vw] lg:text-xl 2xl:text-2xl">
+      <div className="   flex h-[30vh] items-center bg-maingrad p-[5%] text-zinc-100 md:px-[15vw] lg:text-xl 2xl:text-2xl">
         <p className="leading-[25px] lg:leading-relaxed 2xl:leading-loose">
           Sme <b>partia ľudí</b>, ktorí milujú volejbal, jeho dynamiku a
           nezameniteľnú atmosféru. Idea založiť <b> volejbalový klub </b>{" "}
@@ -40,7 +39,7 @@ export const LandingPage = () => {
       </div>
 
       <GalleryPreview />
-      <div className="   flex h-[30vh] items-center bg-gradient-to-r from-[#110d26] to-[#2c0a64] p-[5%] text-zinc-100 md:px-[15vw] lg:text-xl 2xl:text-2xl">
+      <div className="   flex h-[30vh] items-center bg-maingrad p-[5%] text-zinc-100 md:px-[15vw] lg:text-xl 2xl:text-2xl">
         <p className="leading-[25px] lg:leading-relaxed 2xl:leading-loose">
           Našou doménou je <b>organizácia turnajov</b> v plážovom volejbale,
           ktorých kvalita sa radí medzi <b>špičku v nitrianskom kraji</b>.
@@ -51,6 +50,7 @@ export const LandingPage = () => {
         </p>
       </div>
       <JoinUs />
+      <ContactForm />
       <Footer />
     </div>
   );

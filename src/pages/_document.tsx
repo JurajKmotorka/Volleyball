@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="sk">
       <Head>
-        <meta name="description" content="Voleyballový klub topoľčany" />
+        <meta name="description" content="Volejbalový klub topoľčany" />
         <link rel="icon" href="/favicon.png" />
         <link rel="apple-touch-icon" href="/favicon.png"></link>
         <link rel="preconnect" href="https://fonts.googleapis.com" />

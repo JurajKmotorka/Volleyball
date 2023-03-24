@@ -10,7 +10,7 @@ export const JoinUs = () => {
   });
 
   return (
-    <section className=" mt-10  mb-[-2.5rem] overflow-hidden p-10 md:mb-[-5rem] md:mt-20 md:px-[15vw]">
+    <section className=" my-10   overflow-hidden p-10  md:my-20 md:px-[15vw]">
       <div className=" flex items-center justify-between max-md:flex-col-reverse sm:p-2  md:p-8 xl:p-12  ">
         <div
           ref={parallax.ref}

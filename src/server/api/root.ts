@@ -1,5 +1,5 @@
 import { createTRPCRouter } from "(/)/server/api/trpc";
-import { datesRouter } from "./trpc/dates";
+import { contactRouter } from "./trpc/contact";
 
 /**
  * This is the primary router for your server.
@@ -7,7 +7,7 @@ import { datesRouter } from "./trpc/dates";
  * All routers added in /api/routers should be manually added here.
  */
 export const appRouter = createTRPCRouter({
-  dates: datesRouter,
+  contact: contactRouter,
 });
 
 // export type definition of API
