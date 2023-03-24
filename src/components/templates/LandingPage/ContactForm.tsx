@@ -64,7 +64,7 @@ export const ContactForm = () => {
         id="contact"
         className="pb-4 text-center text-3xl font-semibold lg:text-4xl xl:text-5xl"
       >
-        We'd love to hear from you !
+        {"We'd love to hear from you !"}
       </h2>
       <form className="mt-10" onSubmit={handleSubmit(submit)}>
         <div className="mx-auto w-full max-w-sm">
