@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Volleyball Topoľčany</title>
+        <title>Volejbal Topoľčany</title>
         <meta name="description" content={description} />
         <meta property="og:title" content={"Volleyball Topoľčany"} />
         <meta property="og:description" content={description} />
