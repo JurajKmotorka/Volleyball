@@ -62,12 +62,12 @@ export const ContactForm = () => {
     <>
       <h2
         id="contact"
-        className="pb-4 text-center text-3xl font-semibold lg:text-4xl xl:text-5xl"
+        className=" -mb-2 px-2 text-center text-3xl font-semibold sm:mb-0 md:pb-4 lg:text-4xl xl:text-5xl"
       >
         {"We'd love to hear from you !"}
       </h2>
       <form className="mt-10" onSubmit={handleSubmit(submit)}>
-        <div className="mx-auto w-full max-w-sm">
+        <div className="mx-auto w-full max-w-sm p-2">
           <div className="form-control mx-auto w-full max-w-sm">
             <label className="label">
               <span className="label-text">Meno *</span>

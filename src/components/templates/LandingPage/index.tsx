@@ -25,7 +25,7 @@ export const LandingPage = () => {
           Objavte svet volejbalu v Topoľčanoch!
         </p>
       </div>
-      <div className="   flex h-[30vh] items-center bg-maingrad p-[5%] text-zinc-100 md:px-[15vw] lg:text-xl 2xl:text-2xl">
+      <div className="   flex items-center bg-maingrad p-4 text-zinc-100  sm:h-[30vh] sm:p-[5%] md:px-[15vw] lg:text-xl 2xl:text-2xl">
         <p className="leading-[25px] lg:leading-relaxed 2xl:leading-loose">
           Sme <b>partia ľudí</b>, ktorí milujú volejbal, jeho dynamiku a
           nezameniteľnú atmosféru. Idea založiť <b> volejbalový klub </b>{" "}
@@ -39,7 +39,7 @@ export const LandingPage = () => {
       </div>
 
       <GalleryPreview />
-      <div className="   flex h-[30vh] items-center bg-maingrad p-[5%] text-zinc-100 md:px-[15vw] lg:text-xl 2xl:text-2xl">
+      <div className="   flex items-center bg-maingrad p-4 text-zinc-100  sm:h-[30vh] sm:p-[5%] md:px-[15vw] lg:text-xl 2xl:text-2xl">
         <p className="leading-[25px] lg:leading-relaxed 2xl:leading-loose">
           Našou doménou je <b>organizácia turnajov</b> v plážovom volejbale,
           ktorých kvalita sa radí medzi <b>špičku v nitrianskom kraji</b>.
