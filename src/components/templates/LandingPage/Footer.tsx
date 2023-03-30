@@ -4,7 +4,7 @@ import Image from "next/image";
 export const Footer = () => {
   const isMdScreen = useMediaQuery({ minWidth: 1000 });
   const parallax = useParallax<HTMLDivElement>({
-    translateY: isMdScreen ? [150, 0, "easeOutQuint"] : [0, 0, "easeOutQuint"],
+    // translateY: isMdScreen ? [150, 0, "easeOutQuint"] : [0, 0, "easeOutQuint"],
   });
   return (
     <section className=" mt-16 w-full bg-[url('/court-bottom-1.png')] bg-cover">
