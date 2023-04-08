@@ -14,7 +14,12 @@ export const HeroSection = () => {
           <Header />
           <div className="  flex flex-col-reverse items-center  text-base  md:flex-row">
             <div className=" absolute z-20 flex w-[30vw] basis-1 justify-around text-2xl max-md:-translate-y-[2.5rem] md:h-[22vh] md:flex-col   xl:h-[20vh]  2xl:text-3xl">
-              <CiFacebook className="transition duration-300 ease-in-out hover:scale-110" />
+              <a
+                href="https://www.facebook.com/profile.php?id=100091350926364"
+                target="_blank"
+              >
+                <CiFacebook className="transition duration-300 ease-in-out hover:scale-110" />
+              </a>
               <a
                 href="https://www.instagram.com/vk_topolcany/?igshid=YmMyMTA2M2Y%3D&fbclid=IwAR20BQ6avSlm9xskmw_N1gZYIQx1buWsm50t4_eCpHsma--LbaqnzlIiNUk"
                 target="_blank"
