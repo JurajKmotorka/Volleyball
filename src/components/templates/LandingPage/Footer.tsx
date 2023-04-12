@@ -16,6 +16,12 @@ export const Footer = () => {
           width={2400}
           height={1000}
         />
+        <a
+          className="absolute left-[27%] top-[22%] h-[17%] w-[20%]"
+          href="https://www.thescarabeus.eu/"
+          target="_blank"
+        />
+
         {/* <div className=" absolute top-[25%] w-full p-2 font-semibold text-base md:top-[0%] md:p-8 md:text-xl lg:top-[10%]  lg:text-2xl xl:top-[15%] xl:p-12 xl:text-5xl 2xl:top-[18%] ">
           Podporili nás
         </div> */}
