@@ -4,7 +4,7 @@ export const Footer = () => {
   return (
     <section
       id="footer"
-      className=" relative mt-16  grid w-full grid-cols-9 gap-1  bg-[url('/court-bottom-1.png')] bg-cover  px-2 pt-8 sm:grid-cols-11 lg:pt-16 [&>a>*]:rounded-lg "
+      className=" relative mt-16  grid w-full grid-cols-9 gap-1  bg-[url('/court-bottom-1.png')] bg-cover  px-2 pt-8 sm:grid-cols-11 lg:pt-16 [&>a>*]:rounded-md "
     >
       <h3 className="text-centerfont-semibold col-span-2 m-auto text-lg text-white sm:text-2xl sm:font-bold lg:text-4xl">
         Podporili nás
