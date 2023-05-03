@@ -63,7 +63,7 @@ export const Footer = () => {
           target="blank"
         >
           <Image
-            src="/tichelman.jpg"
+            src="/Tichelman.jpg"
             height={600}
             width={600}
             alt="Tichelmann"
