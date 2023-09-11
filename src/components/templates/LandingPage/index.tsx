@@ -26,7 +26,7 @@ export const LandingPage = () => {
         </p>
       </div>
       <div className="   flex items-center bg-maingrad p-4 text-zinc-100   sm:p-8 md:px-[15vw] lg:p-12 lg:text-xl 2xl:text-2xl">
-        <p className="leading-[25px] lg:leading-relaxed 2xl:leading-loose">
+        <p className="m-auto  max-w-2xl leading-[25px] lg:leading-relaxed 2xl:max-w-5xl ">
           Sme <b>partia ľudí</b>, ktorí milujú volejbal, jeho dynamiku a
           nezameniteľnú atmosféru. Idea založiť <b> volejbalový klub </b>{" "}
           vznikla už v roku 2018, kedy sme chceli nadviazať na bohatú históriu
@@ -40,7 +40,7 @@ export const LandingPage = () => {
 
       <GalleryPreview />
       <div className="   flex items-center bg-maingrad p-4 text-zinc-100   sm:p-8 md:px-[15vw] lg:p-12 lg:text-xl 2xl:text-2xl">
-        <p className="leading-[25px] lg:leading-relaxed 2xl:leading-loose">
+        <p className="m-auto  max-w-2xl leading-[25px] lg:leading-relaxed 2xl:max-w-5xl ">
           Našou doménou je <b>organizácia turnajov</b> v plážovom volejbale,
           ktorých kvalita sa radí medzi <b>špičku v nitrianskom kraji</b>.
           Spoločne sa zároveň <b>pripravujeme</b> na účasť na rôznych
