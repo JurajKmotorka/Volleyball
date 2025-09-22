@@ -1,1 +1,0 @@
-Simple microscope slices visualizer.
